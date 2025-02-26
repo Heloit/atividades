@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1project</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/e8c0673f0e.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body id class="body">
+    <header class="head">Homework <i class="fa-solid fa-person-chalkboard"></i></header>
+
+
+    <section class="welcome">
+        <img src="bem-vindo.webp" alt="welcome">
+    </section>
+
+
+
+
+    <button id="menu-toggle" class="menu-toggle">
+        <i class="fa-solid fa-bars"></i> Menu
+    </button>
+
+
+    <nav class="nav" id="nav-menu">
+        <p><a href="#colors">Color & List <i class="fa-solid fa-paint-roller"></i></a></p>
+        <P><a href="#a">API <i class="fa-solid fa-forward"></i></P>
+        <p><a href="#table">Table <i class="fa-solid fa-address-book"></i></p>
+        <p><a href="#c">Crud Simulation <i class="fa-solid fa-sitemap"></i></p>
+
+    </nav>
+
+    <div class="color-list">
+        <div id="colors" class="buttons">
+            <button class="change">Change Color <i class="fa-solid fa-arrows-rotate"></i></button>
+            <button class="back">Origin Color <i class="fa-solid fa-rotate-right"></i></button>
+            <div class="blank" id="blank"> Here you will see the color changing!</div>
+        </div>
+        <div id="add-items" class="lista-container">
+            <input type="text" class="item-input" placeholder="Write Something Here...">
+            <button class="add">Add Item <i class="fa-solid fa-plus"></i></button>
+            <ul class="lista"></ul>
+        </div>
+    </div>
+
+
+
+    <div class="APIs" id="APIs">
+        <div id="api" class="api">
+            <h1>API's Result (MÉTODO GET)</h1>
+            <div id="mensagem" class="mensagem"></div>
+        </div>
+
+        <div class="form" id="form">
+            <h2 class="formTitle">Formulário de Envio (MÉTODO POST)</h2>
+            <form id="dataForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <button class="send" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="table" id="table">
+        <div class="button-container">
+            <button class="filter-button" id="filterButton">Filtrar Maiores de 18</button>
+            <button class="reset-button" id="resetButton">Mostrar Todos</button>
+        </div>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="section" id="listSection">
+            <h2>Listar Dados</h2>
+            <table id="dataList">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTableBody">
+                    <!-- Dados serão listados aqui -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section" id="registerSection">
+            <h2>Cadastrar Novo</h2>
+            <form id="dataForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <button type="submit">Cadastrar</button>
+                <span id="formError" class="error-message"></span>
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p><i class="fa-solid fa-envelope"></i> email: fulana@gmail.com</p>
+        <p><i class="fa-solid fa-hashtag"></i>insta: @fulanex</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
